@@ -30,6 +30,7 @@ const SignupScreen = ({navigation}: {navigation: NavigationProp<any>}) => {
           <>
             <TextInput
               label="Email"
+              accessibilityLabel="Email"
               value={values.email}
               onChangeText={handleChange('email')}
               error={touched.email && !!errors.email}
@@ -41,6 +42,7 @@ const SignupScreen = ({navigation}: {navigation: NavigationProp<any>}) => {
 
             <TextInput
               label="Password"
+              accessibilityLabel="Password"
               value={values.password}
               onChangeText={handleChange('password')}
               secureTextEntry
@@ -53,6 +55,7 @@ const SignupScreen = ({navigation}: {navigation: NavigationProp<any>}) => {
 
             <TextInput
               label="Confirm Password"
+              accessibilityLabel="Confirm Password"
               value={values.confirmPassword}
               onChangeText={handleChange('confirmPassword')}
               secureTextEntry

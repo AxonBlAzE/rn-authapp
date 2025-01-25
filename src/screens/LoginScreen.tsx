@@ -25,6 +25,7 @@ const LoginScreen = ({navigation}: {navigation: NavigationProp<any>}) => {
           <>
             <TextInput
               label="Email"
+              accessibilityLabel="Email"
               value={values.email}
               onChangeText={handleChange('email')}
               error={touched.email && !!errors.email}
@@ -36,6 +37,7 @@ const LoginScreen = ({navigation}: {navigation: NavigationProp<any>}) => {
 
             <TextInput
               label="Password"
+              accessibilityLabel="Password"
               value={values.password}
               onChangeText={handleChange('password')}
               secureTextEntry
