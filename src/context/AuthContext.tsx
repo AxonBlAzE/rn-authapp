@@ -20,7 +20,7 @@ export const AuthProvider = ({children}: AuthProviderProps) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
-  const login = async (email: string, password: string) => {
+  const login = async () => {
     setIsLoading(true);
     try {
       // Simulate API call
