@@ -33,7 +33,7 @@ export const AuthProvider = ({children}: AuthProviderProps) => {
     }
   };
 
-  const signup = async (email: string, password: string) => {
+  const signup = async () => {
     setIsLoading(true);
     try {
       // Simulate API call
